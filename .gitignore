@@ -10,7 +10,7 @@ release-out/
 preview.html
 *.zip
 .docs/
-.tmp*/
+.tmp*
 tmp*/
 jobs/
 output/
