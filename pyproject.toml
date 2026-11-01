@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beatforge"
+version = "0.1.0"
+description = "Typed, deterministic authoring core for high-quality Beat Saber maps"
+readme = "README.release.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26", "soundfile>=0.12", "soxr>=0.3.7", "matplotlib>=3.10", "pillow>=10"]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.50"]
+
+[project.scripts]
+beatforge = "beatforge.cli:release_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+beatforge = ["templates/*.cs"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
