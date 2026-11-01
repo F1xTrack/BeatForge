@@ -1,9 +1,8 @@
 # BeatForge
 
-> **Release note:** the public `v0.1.0` CLI intentionally omits Vivify options.
-> The implementation remains in the source tree and is exposed on the
-> `vivify-beta` branch. See [README.release.md](README.release.md) for the
-> installed release quickstart.
+> **Vivify beta:** this branch enables the experimental Vivify and Unity bundle
+> workflows in the CLI. Commands and packaging may change; review generated
+> assets and scripts before using them. The stable `v0.1.0` release is on `main`.
 
 BeatForge is the authoring environment planned alongside BeatBench. The first
 vertical slice is deliberately deterministic and model-agnostic:

@@ -1,3 +1,3 @@
-from .cli import release_main
+from .cli import main
 
-raise SystemExit(release_main())
+raise SystemExit(main())
